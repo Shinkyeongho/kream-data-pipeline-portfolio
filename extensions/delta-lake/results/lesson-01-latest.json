@@ -1,0 +1,53 @@
+{
+  "lesson": "01_delta_versions",
+  "dataset": "synthetic_learning_sample_2_rows_not_project_data",
+  "spark_version": "4.0.1",
+  "delta_spark_version": "4.0.0",
+  "python_version": "3.12.14",
+  "executed_at_utc": "2026-10-22T06:40:01.332812+00:00",
+  "before_version_0": [
+    {
+      "INSP_ID": "INSP_000001",
+      "REV_NO": 1,
+      "INSP_DURATION_MIN": "5.00000000"
+    },
+    {
+      "INSP_ID": "INSP_000002",
+      "REV_NO": 1,
+      "INSP_DURATION_MIN": "10.00000000"
+    }
+  ],
+  "current_version_1": [
+    {
+      "INSP_ID": "INSP_000001",
+      "REV_NO": 1,
+      "INSP_DURATION_MIN": "7.00000000"
+    },
+    {
+      "INSP_ID": "INSP_000002",
+      "REV_NO": 1,
+      "INSP_DURATION_MIN": "10.00000000"
+    }
+  ],
+  "history": [
+    {
+      "version": 1,
+      "operation": "UPDATE"
+    },
+    {
+      "version": 0,
+      "operation": "WRITE"
+    }
+  ],
+  "checks": {
+    "previous_row_count_is_2": true,
+    "current_row_count_is_2": true,
+    "version_0_preserves_5_minutes": true,
+    "current_has_7_minutes": true,
+    "other_row_unchanged": true,
+    "business_revision_unchanged": true,
+    "table_versions_0_and_1": true,
+    "delta_log_exists": true
+  },
+  "all_passed": true
+}
