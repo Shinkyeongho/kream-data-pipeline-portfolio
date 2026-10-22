@@ -1,5 +1,7 @@
 # 처리 결과와 검증 범위
 
+이 문서는 **기존 팀 MySQL·Pandas 산출물에 저장된 검증 기록**입니다. 이후 개인 확장에서 직접 실행한 Spark·Delta 결과는 [개인 확장 검증 문서](../extensions/delta-lake/docs/validation.md)에 별도로 정리했습니다.
+
 
 
 최종 산출물에 저장된 원본 행 분류는 다음과 같다.
