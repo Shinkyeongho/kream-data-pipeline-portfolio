@@ -1,0 +1,151 @@
+{
+  "record_kind": "index_of_saved_local_execution_summaries",
+  "not_a_new_pipeline_execution": true,
+  "note": "검사 수는 실습별 범위다. 동일 조건의 반복 검사도 있어 합계를 독립 검증 규칙 수로 해석하지 않는다. 코드 해시는 검토 시점 파일의 해시이며 과거 실행 당시 파일의 독립 증명은 아니다.",
+  "lessons": [
+    {
+      "lesson": 1,
+      "scope": "가상 2행: 저장·UPDATE·과거 버전",
+      "result_file": "results/lesson-01-latest.json",
+      "code_file": "lessons/01_delta_versions.py",
+      "check_count": 8,
+      "all_passed": true,
+      "executed_at_utc": "2026-10-22T06:40:01.332812+00:00",
+      "run_id": null,
+      "result_sha256": "f20fcfd79f3dc5a58a8d5bc7865b74cf5343c7bc9eaf75c7d92e572610b66820",
+      "code_sha256": "9608f3b06b6b6bd74e048a8542770df35620c257406b05e7f3c8595f7330cf83"
+    },
+    {
+      "lesson": 2,
+      "scope": "실제 CSV 5종 Bronze 원문·출처",
+      "result_file": "results/lesson-02-latest.json",
+      "code_file": "lessons/02_bronze_ingestion.py",
+      "check_count": 36,
+      "all_passed": true,
+      "executed_at_utc": "2026-10-22T07:03:15.059573+00:00",
+      "run_id": "20261022T070216Z-abeb72cf",
+      "result_sha256": "e52f050937ed52fa1eaf34269b2ffc09882a1e91d05b1409c86f66cc89e07011",
+      "code_sha256": "79a84fa3081c9f88cb2af3435c0d406ceeda67c032786f3938c4eb1d64ed04ad"
+    },
+    {
+      "lesson": 3,
+      "scope": "실제 검수: 숫자 후보",
+      "result_file": "results/lesson-03-latest.json",
+      "code_file": "lessons/03_numeric_candidates.py",
+      "check_count": 22,
+      "all_passed": true,
+      "executed_at_utc": "2026-10-22T07:19:20.755004+00:00",
+      "run_id": "20261022T071830Z-b80bb0f1",
+      "result_sha256": "1fbae8d2501cd028cbec5a6d4b7d800a4c68f27ec5f2a1d4933f14fe16be2a9d",
+      "code_sha256": "b8a4076aa803ae25aa9b626d4e0f220a1264830a03df0f9f91fac66b7b77384e"
+    },
+    {
+      "lesson": 4,
+      "scope": "실제 검수: KST 시각·순서",
+      "result_file": "results/lesson-04-latest.json",
+      "code_file": "lessons/04_datetime_candidates.py",
+      "check_count": 21,
+      "all_passed": true,
+      "executed_at_utc": "2026-10-22T07:35:12.407554+00:00",
+      "run_id": "20261022T073426Z-e6e5ec39",
+      "result_sha256": "e258ac24b0e0fb8e4dc93ca163444709e9f8a0a1bfca75ac4fd47626add1729c",
+      "code_sha256": "1e0a79e635e3e610c81808983127b68646c827146ab4ca0472b2bfbf403fee3e"
+    },
+    {
+      "lesson": 5,
+      "scope": "실제 검수: ID·검수원 마스터 참조",
+      "result_file": "results/lesson-05-latest.json",
+      "code_file": "lessons/05_ids_employee_reference.py",
+      "check_count": 23,
+      "all_passed": true,
+      "executed_at_utc": "2026-10-22T08:15:21.594234+00:00",
+      "run_id": "20261022T081431Z-efd674cc",
+      "result_sha256": "c6d319ded5ecc24d085a38e27a7406352ca34cceef76ed5ec7bf1296d74c81aa",
+      "code_sha256": "3e2e95ee405eddf01a164f64df1ce2f1f3238cdf1dd84b94804bdd3b93017c4f"
+    },
+    {
+      "lesson": 6,
+      "scope": "실제 검수: 상품명·코드 보정 후보",
+      "result_file": "results/lesson-06-latest.json",
+      "code_file": "lessons/06_product_names.py",
+      "check_count": 24,
+      "all_passed": true,
+      "executed_at_utc": "2026-10-22T08:36:25.810085+00:00",
+      "run_id": "20261022T083537Z-6b730515",
+      "result_sha256": "f2797e604d37720b5a4e0c556bacaf24a0b2ed9aac0e3a76a79d4aaf2794f33e",
+      "code_sha256": "6bbf1616977dc70c13e64a6d270176ff0b861faa20b6615b939f2bce0ca181ff"
+    },
+    {
+      "lesson": 7,
+      "scope": "실제 검수: 카테고리 마스터·복구·참조",
+      "result_file": "results/lesson-07-latest.json",
+      "code_file": "lessons/07_category_reference.py",
+      "check_count": 29,
+      "all_passed": true,
+      "executed_at_utc": "2026-10-22T08:52:40.319007+00:00",
+      "run_id": "20261022T085132Z-cca70c6f",
+      "result_sha256": "4a7929687fa5a71ac0576e85a007d6cce62d3a456725e2d2e97b664f79cc05c9",
+      "code_sha256": "66d0de3d9a8f98be0ab1c8b5962f17c31e118ce70c99bda3c16f14eb0d6a8265"
+    },
+    {
+      "lesson": 8,
+      "scope": "실제 검수: 개정·충돌·초기 Silver",
+      "result_file": "results/lesson-08-latest.json",
+      "code_file": "lessons/08_revision_silver.py",
+      "check_count": 34,
+      "all_passed": true,
+      "executed_at_utc": "2026-10-22T09:05:21.017808+00:00",
+      "run_id": "20261022T090342Z-e6efe486",
+      "result_sha256": "ac65b802df6581ee42615f91ded8909c92c5d6f9498da984fe4b9a51129ffcc2",
+      "code_sha256": "0d2007757d91c3fac43039e88717703d6a08d78d3991fae7208dd777e257b680"
+    },
+    {
+      "lesson": 9,
+      "scope": "가상 3개 컬럼: MERGE·내용 멱등성",
+      "result_file": "results/lesson-09-latest.json",
+      "code_file": "lessons/09_merge_basics.py",
+      "check_count": 23,
+      "all_passed": true,
+      "executed_at_utc": "2026-10-22T09:17:58.366981+00:00",
+      "run_id": "20261022T091727Z-05c761f4",
+      "result_sha256": "d856f316a3b7baa2fa4948ac248b75b7d99b368bdf7004d83e093627417b2254",
+      "code_sha256": "08f176b0df893f9dd3b21a6db964d3739c74013c51d411c4ea91556f148efcce"
+    },
+    {
+      "lesson": 10,
+      "scope": "가상 3개 컬럼: 원장·예외 주입·재시도",
+      "result_file": "results/lesson-10-latest.json",
+      "code_file": "lessons/10_batch_ledger.py",
+      "check_count": 27,
+      "all_passed": true,
+      "executed_at_utc": "2026-10-22T09:28:54.532684+00:00",
+      "run_id": "20261022T092815Z-661469d7",
+      "result_sha256": "6335416ed65c8eb17cad3bfdcba13e6e3102d77a24d5755d2fd4a7210317e1b9",
+      "code_sha256": "1def3e3d57f6d7395fe566bd340265f81a74c1f627e143f4c441def3f3a9f11b"
+    },
+    {
+      "lesson": 11,
+      "scope": "정제된 실제 Silver: 배치 재생·전 컬럼 대조",
+      "result_file": "results/lesson-11-latest.json",
+      "code_file": "lessons/11_real_silver_replay.py",
+      "check_count": 23,
+      "all_passed": true,
+      "executed_at_utc": "2026-10-22T09:44:44.233641+00:00",
+      "run_id": "20261022T094307Z-219cf665",
+      "result_sha256": "0b6976447f792dda450c8ddb8bfd466f4e3bf8ec0a98da6bd2865fef3049bf45",
+      "code_sha256": "5aaf09b1eba9190055876ea86f0b7d90d455f88aa24162b06f40b7ff8a379646"
+    },
+    {
+      "lesson": 12,
+      "scope": "실제 고정 스냅샷: 일별 결과·유효 개정 작업량 Gold",
+      "result_file": "results/lesson-12-latest.json",
+      "code_file": "lessons/12_gold_daily.py",
+      "check_count": 20,
+      "all_passed": true,
+      "executed_at_utc": "2026-10-22T10:00:03.731668+00:00",
+      "run_id": "20261022T095923Z-2638a0f6",
+      "result_sha256": "38f4d17eadef2f9bafb26f6335518750b8434a830f9a29d5cb5125650e9cccc4",
+      "code_sha256": "ac599a249d21e69fc039b8a0a0a3fec49219647dfd55fab38e3a703d0c3f6fac"
+    }
+  ]
+}
