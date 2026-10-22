@@ -1,0 +1,64 @@
+{
+  "lesson": "07_category_reference",
+  "run_id": "20261022T085132Z-cca70c6f",
+  "product_run_id": "20261022T083537Z-6b730515",
+  "bronze_run_id": "20261022T070216Z-abeb72cf",
+  "executed_at_utc": "2026-10-22T08:52:40.319007+00:00",
+  "scope": "category_candidates_not_final_inspection_silver",
+  "rows": 335000,
+  "category_master_counts": {
+    "QUARANTINE_CANDIDATE": 30,
+    "EXCLUDED_CANDIDATE": 50,
+    "SILVER_CANDIDATE": 970
+  },
+  "mapping_rows": 20,
+  "category_recovery_counts": {
+    "NOT_MISSING": 334000,
+    "RECOVERABLE_CANDIDATE": 1000
+  },
+  "category_reference_counts": {
+    "SILVER_MASTER_FOUND": 323021,
+    "MASTER_KEY_NOT_FOUND": 1000,
+    "UNRESOLVED_REFERENCE": 1000,
+    "MASTER_QUARANTINED": 9979
+  },
+  "recovered_candidate_reference_counts": {
+    "SILVER_MASTER_FOUND": 971,
+    "MASTER_QUARANTINED": 29
+  },
+  "python_reference_mismatch_rows": 0,
+  "boundary_cases": 10,
+  "checks": {
+    "master_1050_rows_preserved": true,
+    "master_raw_columns_preserved": true,
+    "master_matches_python": true,
+    "master_counts_match_saved_final": true,
+    "valid_master_keys_unique": true,
+    "no_master_content_conflict": true,
+    "mapping_matches_python": true,
+    "20_single_category_mappings": true,
+    "335000_rows_retained": true,
+    "source_keys_unique_no_fanout": true,
+    "upstream_columns_preserved": true,
+    "all_rows_match_python": true,
+    "1000_missing_recovery_candidates": true,
+    "invalid_values_never_filled": true,
+    "raw_ghost_values_never_replaced": true,
+    "ambiguous_mapping_not_selected": true,
+    "all_boundary_cases_present": true,
+    "upstream_unchanged": true,
+    "category_bronze_unchanged": true,
+    "boundary_existing": true,
+    "boundary_wide": true,
+    "boundary_hyphen": true,
+    "boundary_recover": true,
+    "boundary_recovered_but_quarantined": true,
+    "boundary_banned": true,
+    "boundary_unknown_item": true,
+    "boundary_name_not_evidence": true,
+    "boundary_invalid_not_filled": true,
+    "boundary_ghost_not_replaced": true
+  },
+  "check_count": 29,
+  "all_passed": true
+}

@@ -1,0 +1,49 @@
+{
+  "lesson": "04_datetime_candidates",
+  "run_id": "20261022T073426Z-e6e5ec39",
+  "numeric_run_id": "20261022T071830Z-b80bb0f1",
+  "bronze_run_id": "20261022T070216Z-abeb72cf",
+  "executed_at_utc": "2026-10-22T07:35:12.407554+00:00",
+  "scope": "numeric_and_datetime_candidates_not_final_silver_or_quarantine",
+  "timestamp_semantics": "KST_wall_clock_as_timestamp_ntz",
+  "datetime_status_counts": {
+    "DONE_BEFORE_INBOUND": 3165,
+    "EXTRACTED_BEFORE_DONE": 2891,
+    "VALID_DATETIME": 328944
+  },
+  "metrics": {
+    "rows": 335000,
+    "unparseable_rows": 0,
+    "done_before_inbound": 3165,
+    "extracted_before_done": 2891,
+    "datetime_error_unique": 6056,
+    "numeric_and_datetime_passed": 326544
+  },
+  "python_reference_mismatch_rows": 0,
+  "boundary_cases": 10,
+  "checks": {
+    "all_335000_rows_retained": true,
+    "upstream_columns_and_metadata_retained": true,
+    "kst_candidates_use_timestamp_ntz": true,
+    "unparseable_count_matches_baseline": true,
+    "done_before_count_matches_baseline": true,
+    "extracted_before_count_matches_baseline": true,
+    "unique_datetime_errors_match_baseline": true,
+    "all_rows_match_python_datetime_reference": true,
+    "upstream_not_modified": true,
+    "all_boundary_cases_present": true,
+    "candidate_delta_log_exists": true,
+    "boundary_utc_day_rollover": true,
+    "boundary_mixed_formats": true,
+    "boundary_invalid_calendar": true,
+    "boundary_missing": true,
+    "boundary_done_before": true,
+    "boundary_extracted_before": true,
+    "boundary_both_order_errors": true,
+    "boundary_equal_allowed": true,
+    "boundary_offset_not_supported": true,
+    "boundary_no_double_shift": true
+  },
+  "check_count": 21,
+  "all_passed": true
+}

@@ -1,0 +1,101 @@
+{
+  "lesson": "12_gold_daily",
+  "run_id": "20261022T095923Z-2638a0f6",
+  "replay_run_id": "20261022T094307Z-219cf665",
+  "source_silver_run_id": "20261022T090342Z-e6efe486",
+  "executed_at_utc": "2026-10-22T10:00:03.731668+00:00",
+  "scope": "frozen_snapshot_daily_results_and_valid_revision_events_not_incremental_gold",
+  "date_basis": "KST_inspection_completion_wall_clock",
+  "source_versions": {
+    "replayed_silver": 4,
+    "classification_stage": 0
+  },
+  "current_source_stats": {
+    "rows": 271787,
+    "price": "731563841932.5000",
+    "compensation": "154502066956.5000",
+    "first_date": "2010-01-01",
+    "last_date": "2026-10-05"
+  },
+  "event_source_stats": {
+    "rows": 291548,
+    "minutes": "4620775.00000000",
+    "first_date": "2010-01-01",
+    "last_date": "2026-10-05"
+  },
+  "daily_table_rows": {
+    "final_results": 1729,
+    "valid_event_workload": 1729
+  },
+  "daily_result_totals": {
+    "inspection_rows": 271787,
+    "pass_rows": 226964,
+    "fake_reject_rows": 16899,
+    "box_damage_hold_rows": 8510,
+    "fake_pass_claim_rows": 19414,
+    "total_trade_price_krw": "731563841932.5000",
+    "compensation_loss_krw": "154502066956.5000"
+  },
+  "daily_workload_totals": {
+    "rows": 291548,
+    "minutes": "4620775.00000000"
+  },
+  "period_totals": [
+    {
+      "analysis_period": "CONTINUOUS_PERIOD",
+      "inspection_rows": 243454,
+      "observed_done_dates": 1704
+    },
+    {
+      "analysis_period": "ISOLATED_EARLY_PERIOD",
+      "inspection_rows": 1148,
+      "observed_done_dates": 1
+    },
+    {
+      "analysis_period": "PARTIAL_BOUNDARY_MONTH",
+      "inspection_rows": 5529,
+      "observed_done_dates": 22
+    },
+    {
+      "analysis_period": "REINSPECTION_BATCH_PERIOD",
+      "inspection_rows": 21656,
+      "observed_done_dates": 2
+    }
+  ],
+  "event_type_totals": [
+    {
+      "event_type": "FIRST_INSPECTION",
+      "event_rows": 269892,
+      "total_work_minutes": "4278436.00000000"
+    },
+    {
+      "event_type": "REINSPECTION",
+      "event_rows": 21656,
+      "total_work_minutes": "342339.00000000"
+    }
+  ],
+  "checks": {
+    "current_scope_271787": true,
+    "event_scope_291548": true,
+    "scope_difference_older_valid_19761": true,
+    "event_revision_keys_unique": true,
+    "daily_result_keys_unique": true,
+    "daily_workload_keys_unique": true,
+    "result_daily_all_values_match_python": true,
+    "workload_daily_all_values_match_python": true,
+    "daily_results_represent_all_current": true,
+    "daily_result_categories_sum_to_rows": true,
+    "known_result_codes_only": true,
+    "trade_price_total_matches_source": true,
+    "policy_compensation_total_matches_source": true,
+    "daily_workload_represent_all_events": true,
+    "work_minutes_total_matches_source": true,
+    "gold_required_values_not_null": true,
+    "period_boundaries_match_python": true,
+    "sparse_missing_day_not_assumed_zero": true,
+    "current_source_version_unchanged": true,
+    "stage_source_version_unchanged": true
+  },
+  "check_count": 20,
+  "all_passed": true
+}

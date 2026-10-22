@@ -1,0 +1,74 @@
+{
+  "lesson": "08_revision_silver",
+  "run_id": "20261022T090342Z-e6efe486",
+  "category_run_id": "20261022T085132Z-cca70c6f",
+  "bronze_run_id": "20261022T070216Z-abeb72cf",
+  "executed_at_utc": "2026-10-22T09:05:21.017808+00:00",
+  "scope": "initial_snapshot_silver_not_incremental_or_gold",
+  "rows": 335000,
+  "disposition_counts": {
+    "SILVER": 271787,
+    "EXCLUDED": 29359,
+    "QUARANTINE": 33854
+  },
+  "primary_reason_counts": {
+    "LATEST_VALID_REVISION": 271787,
+    "QUALITY_RULE_VIOLATION": 33854,
+    "IDENTICAL_DUPLICATE": 9598,
+    "SUPERSEDED_VALID_REVISION": 19761
+  },
+  "revision_group_counts": {
+    "IDENTICAL_DUPLICATE": {
+      "key_groups": 10000,
+      "source_rows": 20000
+    },
+    "SINGLE_RECORD": {
+      "key_groups": 310200,
+      "source_rows": 310200
+    },
+    "REVISION_CONFLICT": {
+      "key_groups": 2400,
+      "source_rows": 4800
+    }
+  },
+  "python_reference_mismatch_rows": 0,
+  "boundary_rows": 15,
+  "checks": {
+    "335000_rows_preserved": true,
+    "upstream_columns_preserved": true,
+    "all_classifications_match_python": true,
+    "counts_match_saved_team_final": true,
+    "exclusion_reasons_match_saved_final": true,
+    "silver_one_row_per_inspection": true,
+    "silver_source_ids_unique": true,
+    "silver_no_rule_errors_or_missing_checks": true,
+    "silver_is_first_latest_valid_revision": true,
+    "silver_storage_errors_zero": true,
+    "silver_values_match_selected_stage": true,
+    "silver_money_precision": true,
+    "silver_duration_precision": true,
+    "all_source_rows_assigned_once": true,
+    "silver_time_order": true,
+    "silver_category_reference": true,
+    "silver_employee_matches_validated_master_key": true,
+    "upstream_not_modified": true,
+    "all_boundary_rows_present": true,
+    "boundary_row_1": true,
+    "boundary_row_2": true,
+    "boundary_row_3": true,
+    "boundary_row_4": true,
+    "boundary_row_5": true,
+    "boundary_row_6": true,
+    "boundary_row_7": true,
+    "boundary_row_8": true,
+    "boundary_row_9": true,
+    "boundary_row_10": true,
+    "boundary_row_11": true,
+    "boundary_row_12": true,
+    "boundary_row_13": true,
+    "boundary_row_14": true,
+    "boundary_row_15": true
+  },
+  "check_count": 34,
+  "all_passed": true
+}

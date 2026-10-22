@@ -1,0 +1,264 @@
+{
+  "lesson": "09_merge_basics",
+  "run_id": "20261022T091727Z-05c761f4",
+  "prerequisite_silver_run_id": "20261022T090342Z-e6efe486",
+  "executed_at_utc": "2026-10-22T09:17:58.366981+00:00",
+  "scope": "synthetic_three_column_merge_not_real_project_incremental_pipeline",
+  "initial_rows": [
+    {
+      "INSP_ID": "INSP_000001",
+      "REV_NO": 1,
+      "PRICE_KRW": "100.0000"
+    },
+    {
+      "INSP_ID": "INSP_000002",
+      "REV_NO": 1,
+      "PRICE_KRW": "200.0000"
+    }
+  ],
+  "after_first_merge": [
+    {
+      "INSP_ID": "INSP_000001",
+      "REV_NO": 2,
+      "PRICE_KRW": "120.0000"
+    },
+    {
+      "INSP_ID": "INSP_000002",
+      "REV_NO": 1,
+      "PRICE_KRW": "200.0000"
+    },
+    {
+      "INSP_ID": "INSP_000003",
+      "REV_NO": 1,
+      "PRICE_KRW": "300.0000"
+    }
+  ],
+  "after_replay": [
+    {
+      "INSP_ID": "INSP_000001",
+      "REV_NO": 2,
+      "PRICE_KRW": "120.0000"
+    },
+    {
+      "INSP_ID": "INSP_000002",
+      "REV_NO": 1,
+      "PRICE_KRW": "200.0000"
+    },
+    {
+      "INSP_ID": "INSP_000003",
+      "REV_NO": 1,
+      "PRICE_KRW": "300.0000"
+    }
+  ],
+  "after_late_old_revision": [
+    {
+      "INSP_ID": "INSP_000001",
+      "REV_NO": 2,
+      "PRICE_KRW": "120.0000"
+    },
+    {
+      "INSP_ID": "INSP_000002",
+      "REV_NO": 1,
+      "PRICE_KRW": "200.0000"
+    },
+    {
+      "INSP_ID": "INSP_000003",
+      "REV_NO": 1,
+      "PRICE_KRW": "300.0000"
+    }
+  ],
+  "final_rows": [
+    {
+      "INSP_ID": "INSP_000001",
+      "REV_NO": 2,
+      "PRICE_KRW": "120.0000"
+    },
+    {
+      "INSP_ID": "INSP_000002",
+      "REV_NO": 2,
+      "PRICE_KRW": "220.0000"
+    },
+    {
+      "INSP_ID": "INSP_000003",
+      "REV_NO": 1,
+      "PRICE_KRW": "300.0000"
+    }
+  ],
+  "observed_versions": {
+    "initial": 0,
+    "first_merge": 1,
+    "replay": 2,
+    "late_old_revision": 3,
+    "final": 4
+  },
+  "rejections": {
+    "negative_price": {
+      "error": "INVALID_INPUT",
+      "expected_error": "INVALID_INPUT",
+      "data_unchanged": true,
+      "version_unchanged": true
+    },
+    "same_revision_conflict": {
+      "error": "CURRENT_REVISION_CONTENT_CONFLICT",
+      "expected_error": "CURRENT_REVISION_CONTENT_CONFLICT",
+      "data_unchanged": true,
+      "version_unchanged": true
+    },
+    "duplicate_source": {
+      "error": "DUPLICATE_SOURCE_KEY",
+      "expected_error": "DUPLICATE_SOURCE_KEY",
+      "data_unchanged": true,
+      "version_unchanged": true
+    }
+  },
+  "history": [
+    {
+      "version": 0,
+      "operation": "WRITE",
+      "operation_metrics": {
+        "numOutputRows": "2",
+        "numOutputBytes": "1107",
+        "numFiles": "1"
+      }
+    },
+    {
+      "version": 1,
+      "operation": "MERGE",
+      "operation_metrics": {
+        "numOutputRows": "3",
+        "numTargetBytesAdded": "1127",
+        "numTargetRowsInserted": "1",
+        "numTargetRowsMatchedDeleted": "0",
+        "numTargetFilesAdded": "1",
+        "materializeSourceTimeMs": "96",
+        "numTargetFilesRemoved": "1",
+        "numTargetRowsMatchedUpdated": "1",
+        "executionTimeMs": "1318",
+        "numTargetDeletionVectorsUpdated": "0",
+        "numTargetRowsCopied": "1",
+        "rewriteTimeMs": "491",
+        "numTargetRowsUpdated": "1",
+        "numTargetDeletionVectorsRemoved": "0",
+        "numTargetRowsDeleted": "0",
+        "scanTimeMs": "721",
+        "numSourceRows": "2",
+        "numTargetDeletionVectorsAdded": "0",
+        "numTargetChangeFilesAdded": "0",
+        "numTargetRowsNotMatchedBySourceUpdated": "0",
+        "numTargetRowsNotMatchedBySourceDeleted": "0",
+        "numTargetBytesRemoved": "1107"
+      }
+    },
+    {
+      "version": 2,
+      "operation": "MERGE",
+      "operation_metrics": {
+        "numOutputRows": "3",
+        "numTargetBytesAdded": "1127",
+        "numTargetRowsInserted": "0",
+        "numTargetRowsMatchedDeleted": "0",
+        "numTargetFilesAdded": "1",
+        "materializeSourceTimeMs": "34",
+        "numTargetFilesRemoved": "1",
+        "numTargetRowsMatchedUpdated": "0",
+        "executionTimeMs": "666",
+        "numTargetDeletionVectorsUpdated": "0",
+        "numTargetRowsCopied": "3",
+        "rewriteTimeMs": "280",
+        "numTargetRowsUpdated": "0",
+        "numTargetDeletionVectorsRemoved": "0",
+        "numTargetRowsDeleted": "0",
+        "scanTimeMs": "347",
+        "numSourceRows": "2",
+        "numTargetDeletionVectorsAdded": "0",
+        "numTargetChangeFilesAdded": "0",
+        "numTargetRowsNotMatchedBySourceUpdated": "0",
+        "numTargetRowsNotMatchedBySourceDeleted": "0",
+        "numTargetBytesRemoved": "1127"
+      }
+    },
+    {
+      "version": 3,
+      "operation": "MERGE",
+      "operation_metrics": {
+        "numOutputRows": "3",
+        "numTargetBytesAdded": "1127",
+        "numTargetRowsInserted": "0",
+        "numTargetRowsMatchedDeleted": "0",
+        "numTargetFilesAdded": "1",
+        "materializeSourceTimeMs": "35",
+        "numTargetFilesRemoved": "1",
+        "numTargetRowsMatchedUpdated": "0",
+        "executionTimeMs": "513",
+        "numTargetDeletionVectorsUpdated": "0",
+        "numTargetRowsCopied": "3",
+        "rewriteTimeMs": "231",
+        "numTargetRowsUpdated": "0",
+        "numTargetDeletionVectorsRemoved": "0",
+        "numTargetRowsDeleted": "0",
+        "scanTimeMs": "241",
+        "numSourceRows": "1",
+        "numTargetDeletionVectorsAdded": "0",
+        "numTargetChangeFilesAdded": "0",
+        "numTargetRowsNotMatchedBySourceUpdated": "0",
+        "numTargetRowsNotMatchedBySourceDeleted": "0",
+        "numTargetBytesRemoved": "1127"
+      }
+    },
+    {
+      "version": 4,
+      "operation": "MERGE",
+      "operation_metrics": {
+        "numOutputRows": "3",
+        "numTargetBytesAdded": "1127",
+        "numTargetRowsInserted": "0",
+        "numTargetRowsMatchedDeleted": "0",
+        "numTargetFilesAdded": "1",
+        "materializeSourceTimeMs": "29",
+        "numTargetFilesRemoved": "1",
+        "numTargetRowsMatchedUpdated": "1",
+        "executionTimeMs": "462",
+        "numTargetDeletionVectorsUpdated": "0",
+        "numTargetRowsCopied": "2",
+        "rewriteTimeMs": "198",
+        "numTargetRowsUpdated": "1",
+        "numTargetDeletionVectorsRemoved": "0",
+        "numTargetRowsDeleted": "0",
+        "scanTimeMs": "231",
+        "numSourceRows": "1",
+        "numTargetDeletionVectorsAdded": "0",
+        "numTargetChangeFilesAdded": "0",
+        "numTargetRowsNotMatchedBySourceUpdated": "0",
+        "numTargetRowsNotMatchedBySourceDeleted": "0",
+        "numTargetBytesRemoved": "1127"
+      }
+    }
+  ],
+  "checks": {
+    "initial_two_rows": true,
+    "initial_delta_version_zero": true,
+    "higher_revision_updated": true,
+    "new_key_inserted": true,
+    "unmentioned_existing_row_retained": true,
+    "first_merge_matches_fixed_expectation": true,
+    "same_input_replay_same_business_values": true,
+    "same_input_replay_no_extra_rows": true,
+    "late_old_revision_does_not_overwrite": true,
+    "later_valid_revision_updated": true,
+    "final_matches_fixed_expectation": true,
+    "final_keys_unique": true,
+    "final_total_price": true,
+    "version_zero_still_readable": true,
+    "first_merge_version_still_readable": true,
+    "merge_recorded_in_history": true,
+    "actual_335000_row_lesson_silver_untouched": true,
+    "negative_price_rejected": true,
+    "negative_price_no_data_or_version_change": true,
+    "same_revision_conflict_rejected": true,
+    "same_revision_conflict_no_data_or_version_change": true,
+    "duplicate_source_rejected": true,
+    "duplicate_source_no_data_or_version_change": true
+  },
+  "check_count": 23,
+  "all_passed": true
+}

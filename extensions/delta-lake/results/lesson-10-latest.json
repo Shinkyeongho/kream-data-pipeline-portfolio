@@ -1,0 +1,101 @@
+{
+  "lesson": "10_batch_ledger",
+  "run_id": "20261022T092815Z-661469d7",
+  "prerequisite_merge_run_id": "20261022T091727Z-05c761f4",
+  "executed_at_utc": "2026-10-22T09:28:54.532684+00:00",
+  "scope": "synthetic_single_writer_ledger_not_multitable_atomic_or_real_csv_incremental",
+  "ledger_entries": [
+    {
+      "batch_id": "batch-A",
+      "payload_sha256": "bf86502738972702615c8150c7c058e59d15c775e2cbe19522d8099089257a32",
+      "rule_version": "synthetic_merge_ledger_v1",
+      "status": "COMPLETED",
+      "attempts": 1,
+      "updated_at_utc": "2026-10-22T09:28:36.196991+00:00",
+      "silver_version_after": 1
+    },
+    {
+      "batch_id": "batch-B",
+      "payload_sha256": "347c320c1162e91315630f2950afc9309091b09f4f7d3f44b3e45bdfaa72feeb",
+      "rule_version": "synthetic_merge_ledger_v1",
+      "status": "COMPLETED",
+      "attempts": 2,
+      "updated_at_utc": "2026-10-22T09:28:46.643798+00:00",
+      "silver_version_after": 3
+    },
+    {
+      "batch_id": "batch-C",
+      "payload_sha256": "ed92960cbe32bc23319c3072fc4ff33df845592323e4885b073008da39830083",
+      "rule_version": "synthetic_merge_ledger_v1",
+      "status": "COMPLETED",
+      "attempts": 1,
+      "updated_at_utc": "2026-10-22T09:28:51.710256+00:00",
+      "silver_version_after": 4
+    }
+  ],
+  "simulated_failure": {
+    "error": "SIMULATED_AFTER_DATA_BEFORE_COMPLETION",
+    "ledger_entry_after_failure": {
+      "batch_id": "batch-B",
+      "payload_sha256": "347c320c1162e91315630f2950afc9309091b09f4f7d3f44b3e45bdfaa72feeb",
+      "rule_version": "synthetic_merge_ledger_v1",
+      "status": "STARTED",
+      "attempts": 1,
+      "updated_at_utc": "2026-10-22T09:28:40.098915+00:00",
+      "silver_version_after": null
+    }
+  },
+  "final_rows": [
+    {
+      "INSP_ID": "INSP_000001",
+      "REV_NO": 2,
+      "PRICE_KRW": "120.0000"
+    },
+    {
+      "INSP_ID": "INSP_000002",
+      "REV_NO": 2,
+      "PRICE_KRW": "220.0000"
+    },
+    {
+      "INSP_ID": "INSP_000003",
+      "REV_NO": 1,
+      "PRICE_KRW": "300.0000"
+    },
+    {
+      "INSP_ID": "INSP_000004",
+      "REV_NO": 1,
+      "PRICE_KRW": "400.0000"
+    }
+  ],
+  "checks": {
+    "initial_ledger_empty": true,
+    "first_batch_applied": true,
+    "first_batch_values_correct": true,
+    "first_batch_completed_once": true,
+    "completed_batch_skipped": true,
+    "completed_repeat_data_unchanged": true,
+    "completed_repeat_both_versions_unchanged": true,
+    "row_order_independent_fingerprint": true,
+    "reordered_repeat_skipped_without_commits": true,
+    "same_batch_id_changed_payload_rejected": true,
+    "changed_payload_no_data_or_commit_change": true,
+    "failure_after_merge_observed": true,
+    "failure_data_already_applied": true,
+    "failure_not_marked_completed": true,
+    "retry_resumes_from_persisted_ledger": true,
+    "retry_completed_with_attempt_two": true,
+    "retry_same_values_no_duplicates": true,
+    "completed_retry_skips_without_commits": true,
+    "late_old_revision_keeps_current_values": true,
+    "late_batch_recorded_completed": true,
+    "late_batch_repeat_skips_without_commits": true,
+    "ledger_three_unique_completed_batches": true,
+    "final_matches_fixed_expectation": true,
+    "final_four_unique_keys": true,
+    "final_total_price_1040": true,
+    "initial_version_still_readable": true,
+    "lesson09_table_untouched": true
+  },
+  "check_count": 27,
+  "all_passed": true
+}

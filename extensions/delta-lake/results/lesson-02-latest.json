@@ -1,0 +1,124 @@
+{
+  "lesson": "02_bronze_ingestion",
+  "run_id": "20261022T070216Z-abeb72cf",
+  "executed_at_utc": "2026-10-22T07:03:15.059573+00:00",
+  "spark_version": "4.0.1",
+  "delta_spark_version": "4.0.0",
+  "semantics": "independent_initial_load_per_run_not_incremental_ingestion",
+  "tables": [
+    {
+      "source_file": "kream_product_std_dict.csv",
+      "table": "bronze_product_std_dict",
+      "source_rows": 32,
+      "bronze_rows": 32,
+      "business_columns": 8,
+      "metadata_columns": 6,
+      "source_sha256": "81b71649e6c827f950e78c1483a0c0a871e567fff0a2aeb5cda4056d2371fbc4",
+      "missing_rows": 0,
+      "extra_rows": 0,
+      "raw_token_counts": null,
+      "checks": {
+        "source_sha256_matches_team_manifest": true,
+        "row_count_matches_original": true,
+        "source_record_numbers_complete": true,
+        "source_record_ids_unique": true,
+        "all_business_columns_are_strings": true,
+        "all_values_and_metadata_match_input": true,
+        "delta_log_exists": true
+      }
+    },
+    {
+      "source_file": "kream_category_parent_lookup.csv",
+      "table": "bronze_category_parent_lookup",
+      "source_rows": 1050,
+      "bronze_rows": 1050,
+      "business_columns": 4,
+      "metadata_columns": 6,
+      "source_sha256": "b09cd8c52abd0f06a6503e6fa8b381537c9446ff1099c0239685b78e3fe392af",
+      "missing_rows": 0,
+      "extra_rows": 0,
+      "raw_token_counts": null,
+      "checks": {
+        "source_sha256_matches_team_manifest": true,
+        "row_count_matches_original": true,
+        "source_record_numbers_complete": true,
+        "source_record_ids_unique": true,
+        "all_business_columns_are_strings": true,
+        "all_values_and_metadata_match_input": true,
+        "delta_log_exists": true
+      }
+    },
+    {
+      "source_file": "kream_inspector_master.csv",
+      "table": "bronze_inspector_master",
+      "source_rows": 3150,
+      "bronze_rows": 3150,
+      "business_columns": 6,
+      "metadata_columns": 6,
+      "source_sha256": "1b666e7a1b108f8aa5a3ed0f81ff51819a922ca1b779d23b9e7203f996461447",
+      "missing_rows": 0,
+      "extra_rows": 0,
+      "raw_token_counts": null,
+      "checks": {
+        "source_sha256_matches_team_manifest": true,
+        "row_count_matches_original": true,
+        "source_record_numbers_complete": true,
+        "source_record_ids_unique": true,
+        "all_business_columns_are_strings": true,
+        "all_values_and_metadata_match_input": true,
+        "delta_log_exists": true
+      }
+    },
+    {
+      "source_file": "kream_inspection_300000.csv",
+      "table": "bronze_inspection",
+      "source_rows": 335000,
+      "bronze_rows": 335000,
+      "business_columns": 13,
+      "metadata_columns": 6,
+      "source_sha256": "2762d3caaa159da23bbb1a7c8779cdb8b4ecdc37aa948fc4c94219ddba5c2dff",
+      "missing_rows": 0,
+      "extra_rows": 0,
+      "raw_token_counts": {
+        "employee_empty_string": 400,
+        "employee_literal_NULL": 400,
+        "employee_literal_NA": 400,
+        "duration_minus999": 1200
+      },
+      "checks": {
+        "source_sha256_matches_team_manifest": true,
+        "row_count_matches_original": true,
+        "source_record_numbers_complete": true,
+        "source_record_ids_unique": true,
+        "all_business_columns_are_strings": true,
+        "all_values_and_metadata_match_input": true,
+        "delta_log_exists": true,
+        "raw_missing_and_sentinel_tokens_preserved": true
+      }
+    },
+    {
+      "source_file": "kream_inspection_join_ready.csv",
+      "table": "bronze_inspection_join_ready",
+      "source_rows": 335000,
+      "bronze_rows": 335000,
+      "business_columns": 18,
+      "metadata_columns": 6,
+      "source_sha256": "54459f8af4dae7a6786afb343bfc0b3d8c5f11ad3f16a9e61b1fdfe4efd49d65",
+      "missing_rows": 0,
+      "extra_rows": 0,
+      "raw_token_counts": null,
+      "checks": {
+        "source_sha256_matches_team_manifest": true,
+        "row_count_matches_original": true,
+        "source_record_numbers_complete": true,
+        "source_record_ids_unique": true,
+        "all_business_columns_are_strings": true,
+        "all_values_and_metadata_match_input": true,
+        "delta_log_exists": true
+      }
+    }
+  ],
+  "total_physical_rows": 674232,
+  "check_count": 36,
+  "all_passed": true
+}

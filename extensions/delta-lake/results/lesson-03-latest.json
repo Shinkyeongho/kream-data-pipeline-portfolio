@@ -1,0 +1,50 @@
+{
+  "lesson": "03_numeric_candidates",
+  "run_id": "20261022T071830Z-b80bb0f1",
+  "bronze_run_id": "20261022T070216Z-abeb72cf",
+  "executed_at_utc": "2026-10-22T07:19:20.755004+00:00",
+  "scope": "two_numeric_columns_only_not_final_silver_or_quarantine",
+  "fixed_usd_krw_rate": 1350,
+  "rows": 335000,
+  "price_status_counts": {
+    "CONVERTED": 333800,
+    "MISSING_PRICE": 591,
+    "NEGATIVE_PRICE": 609
+  },
+  "duration_status_counts": {
+    "SENTINEL_MINUS_999": 1200,
+    "CONVERTED": 333800
+  },
+  "numeric_rules_passed_counts": {
+    "true": 332600,
+    "false": 2400
+  },
+  "python_reference_mismatches": 0,
+  "boundary_cases": 11,
+  "checks": {
+    "all_335000_rows_retained": true,
+    "raw_values_and_metadata_retained": true,
+    "price_status_matches_existing_diagnosis": true,
+    "duration_status_matches_existing_diagnosis": true,
+    "all_rows_match_python_decimal_reference": true,
+    "price_decimal_type": true,
+    "duration_decimal_type": true,
+    "invalid_price_not_replaced_with_zero": true,
+    "invalid_duration_not_replaced_with_zero": true,
+    "bronze_not_modified": true,
+    "candidate_delta_log_exists": true,
+    "boundary_plain": true,
+    "boundary_usd": true,
+    "boundary_manwon": true,
+    "boundary_won": true,
+    "boundary_missing": true,
+    "boundary_negative": true,
+    "boundary_format": true,
+    "boundary_rounding": true,
+    "boundary_padding": true,
+    "boundary_nulls": true,
+    "boundary_newline": true
+  },
+  "check_count": 22,
+  "all_passed": true
+}

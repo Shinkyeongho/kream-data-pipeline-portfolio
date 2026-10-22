@@ -1,0 +1,51 @@
+{
+  "lesson": "06_product_names",
+  "run_id": "20261022T083537Z-6b730515",
+  "id_employee_run_id": "20261022T081431Z-efd674cc",
+  "bronze_run_id": "20261022T070216Z-abeb72cf",
+  "executed_at_utc": "2026-10-22T08:36:25.810085+00:00",
+  "scope": "product_names_only_not_final_silver_category_recovery_pending",
+  "rows": 335000,
+  "original_name_status_counts": {
+    "BANNED_PRODUCT_CODE": 3600,
+    "REGISTERED_ALIAS": 3086,
+    "STANDARD_NAME": 317900,
+    "UNMAPPED_NAME_REVIEW": 10414
+  },
+  "product_name_status_counts": {
+    "BANNED_PRODUCT_CODE": 3600,
+    "REGISTERED_ALIAS": 3086,
+    "STANDARD_NAME": 317900,
+    "RECOVERED_BY_ITEM_CODE": 10414
+  },
+  "python_reference_mismatch_rows": 0,
+  "boundary_cases": 12,
+  "checks": {
+    "335000_rows_retained": true,
+    "source_ids_unique_no_join_fanout": true,
+    "upstream_columns_preserved": true,
+    "python_all_rows_match": true,
+    "all_rows_classified": true,
+    "banned_never_recovered": true,
+    "other_product_never_recovered": true,
+    "recovery_only_unmapped": true,
+    "upstream_version_unchanged": true,
+    "dictionary_version_unchanged": true,
+    "duplicate_dictionary_code_rejected": true,
+    "all_boundary_cases_present": true,
+    "boundary_standard": true,
+    "boundary_alias": true,
+    "boundary_annotated_alias": true,
+    "boundary_spelling_variant": true,
+    "boundary_unmapped_code_recovery": true,
+    "boundary_other_product": true,
+    "boundary_ambiguous_alias": true,
+    "boundary_banned_name": true,
+    "boundary_banned_code": true,
+    "boundary_unknown_code": true,
+    "boundary_code_not_trimmed": true,
+    "boundary_no_fuzzy_match": true
+  },
+  "check_count": 24,
+  "all_passed": true
+}
