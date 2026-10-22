@@ -14,3 +14,5 @@
 | [team_asset_manifest.json](team_asset_manifest.json) | 선별한 팀 파일의 원본 경로·크기·해시 |
 
 원본 진단 건수와 최종 격리·제외 건수는 범위가 다릅니다. 동일 행의 오류가 중첩될 수 있어 문제별 건수를 합산하지 않습니다. 482개 검사 실패 0개를 미검증 업무 규칙까지 포함한 전체 품질 100%로 확대하지 않습니다.
+
+이후 개인 확장의 새 실행 요약은 이 팀 근거 파일과 구분해 [Delta 검증 인덱스](../extensions/delta-lake/evidence/verification-index.json)에 연결했습니다. 초기 Spark Silver·배치 재생·Gold 대조 범위는 [개인 확장 검증 문서](../extensions/delta-lake/docs/validation.md)를 참고합니다.
