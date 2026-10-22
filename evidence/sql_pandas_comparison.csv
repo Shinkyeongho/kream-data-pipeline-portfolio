@@ -1,0 +1,9 @@
+﻿metric,pandas_value,previous_sql_value,difference,source
+PHYSICAL_INSPECTIONS,335000,335000,0,이전 SQL 진단 작업 기록. 공급 CSV를 직접 읽어 동일 정의로 재확인
+DISTINCT_INSPECTION_IDS,300000,300000,0,이전 SQL 진단 작업 기록. 공급 CSV를 직접 읽어 동일 정의로 재확인
+REVISION_2_ROWS,22600,22600,0,이전 SQL 진단 작업 기록. 공급 CSV를 직접 읽어 동일 정의로 재확인
+CONFLICT_GROUPS,2400,2400,0,이전 SQL 진단 작업 기록. 공급 CSV를 직접 읽어 동일 정의로 재확인
+CONFLICT_ROWS,4800,4800,0,이전 SQL 진단 작업 기록. 공급 CSV를 직접 읽어 동일 정의로 재확인
+EXACT_DUPLICATE_ROWS,10000,10000,0,이전 SQL 진단 작업 기록. 공급 CSV를 직접 읽어 동일 정의로 재확인
+DONE_BEFORE_INBOUND,3165,3165,0,이전 SQL 진단 작업 기록. 공급 CSV를 직접 읽어 동일 정의로 재확인
+EXTRACTED_BEFORE_DONE,2891,2891,0,이전 SQL 진단 작업 기록. 공급 CSV를 직접 읽어 동일 정의로 재확인

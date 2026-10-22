@@ -1,0 +1,62 @@
+[
+  {
+    "source_in_team_zip": "assets/physical_erd.svg",
+    "path": "assets/physical_erd.svg",
+    "bytes": 2873,
+    "sha256": "62abf60b862111f9371e715dbce0c30380280f9167fe5b12ede707486309f2d4"
+  },
+  {
+    "source_in_team_zip": "assets/11_disposition.png",
+    "path": "assets/11_disposition.png",
+    "bytes": 150837,
+    "sha256": "b059ea70cd6c9eff6c78fe004591a73c8fb677a9ce48fe8593f02a0db0426b87"
+  },
+  {
+    "source_in_team_zip": "presentation/KREAM_최종발표자료.pptx",
+    "path": "presentation/KREAM_최종발표자료.pptx",
+    "bytes": 4095022,
+    "sha256": "f3c276cdfe8358eaa5fb01a1a7c0ab772ed4c8ed1d9122e381343a42e5df9dfe"
+  },
+  {
+    "source_in_team_zip": "reports/bronze/asis_business_diagnosis.csv",
+    "path": "evidence/asis_business_diagnosis.csv",
+    "bytes": 3407,
+    "sha256": "762d050de0f02e227d70933da0d095c846ec79e55f816787de053f82289db2e9"
+  },
+  {
+    "source_in_team_zip": "reports/bronze/source_manifest.csv",
+    "path": "evidence/source_manifest.csv",
+    "bytes": 647,
+    "sha256": "de5b3ee57b51b0f6889f6ae1444cb2480ec1cd8cfcc8d351febdb06a3f2de400"
+  },
+  {
+    "source_in_team_zip": "reports/bronze/sql_pandas_comparison.csv",
+    "path": "evidence/sql_pandas_comparison.csv",
+    "bytes": 1026,
+    "sha256": "f780d42f879f11983d100a1b57a91000eea28bf630fdc9daf25a124ce1bb2ec8"
+  },
+  {
+    "source_in_team_zip": "reports/pandas_verification_summary.json",
+    "path": "evidence/pandas_verification_summary.json",
+    "bytes": 7806,
+    "sha256": "784074073febd3fab4e6cc219e2253b07375a673ba80eb7a73fb5c5c796cc689"
+  },
+  {
+    "source_in_team_zip": "reports/team_analysis/general_department_risk.csv",
+    "path": "evidence/general_department_risk.csv",
+    "bytes": 620,
+    "sha256": "19ddf0ccfce4918e4c1ae0e79f85ad46e742015776ad87a85de78f6adcaaff0d"
+  },
+  {
+    "source_in_team_zip": "reports/team_analysis/general_duration_under10.csv",
+    "path": "evidence/general_duration_under10.csv",
+    "bytes": 465,
+    "sha256": "78fa4da10877d7430478e8caa0d42d7c88e479a4bd0f3c89398d995c621276ef"
+  },
+  {
+    "source_in_team_zip": "reports/team_analysis/reinspection_department_risk.csv",
+    "path": "evidence/reinspection_department_risk.csv",
+    "bytes": 618,
+    "sha256": "12e6c1976221fa6f9c5fc9d47d70e845819873f6acb18973afb7ec49a9a9f5a5"
+  }
+]

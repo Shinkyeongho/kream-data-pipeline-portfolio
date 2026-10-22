@@ -1,0 +1,21 @@
+﻿source_file,column_name,issue,rows,denominator,ratio_pct,meaning
+kream_inspection_300000.csv,DATETIME,UNPARSEABLE_TIME,0,335000,0.0,어느 필수 시각이든 지원 형식이나 실제 달력 해석 실패
+kream_inspection_300000.csv,DATETIME,DONE_BEFORE_INBOUND,3165,335000,0.944776,검수 완료가 입고보다 빠름
+kream_inspection_300000.csv,DATETIME,EXTRACTED_BEFORE_DONE,2891,335000,0.862985,추출이 완료보다 빠름
+kream_inspection_300000.csv,DATETIME,TIME_ORDER_ERROR_UNIQUE,6056,335000,1.807761,필수 시각 해석 실패 또는 시간 역전의 고유 행 수
+kream_inspection_300000.csv,TRADE_PRICE_KRW,CONVERTED,333800,335000,99.641791,정의된 단위·형식에 따른 원본 해석 상태. CONVERTED는 변환 가능한 정상 후보
+kream_inspection_300000.csv,TRADE_PRICE_KRW,MISSING_PRICE,591,335000,0.176418,정의된 단위·형식에 따른 원본 해석 상태. CONVERTED는 변환 가능한 정상 후보
+kream_inspection_300000.csv,TRADE_PRICE_KRW,NEGATIVE_PRICE,609,335000,0.181791,정의된 단위·형식에 따른 원본 해석 상태. CONVERTED는 변환 가능한 정상 후보
+kream_inspection_300000.csv,INSP_DURATION_MIN,CONVERTED,333800,335000,99.641791,정의된 단위·형식에 따른 원본 해석 상태. CONVERTED는 변환 가능한 정상 후보
+kream_inspection_300000.csv,INSP_DURATION_MIN,SENTINEL_MINUS_999,1200,335000,0.358209,정의된 단위·형식에 따른 원본 해석 상태. CONVERTED는 변환 가능한 정상 후보
+kream_inspection_300000.csv,INSP_ID,NORMALIZATION_CHANGED,6000,335000,1.791045,명세와 확정 규칙에 따른 표기 정규화 후보
+kream_inspection_300000.csv,INSP_ID,INVALID_FORMAT_AFTER_NORMALIZATION,0,335000,0.0,정규화 후 형식 불일치. 결측과 마스터 참조 문제는 별도 판단
+kream_inspection_300000.csv,INSPECTOR_EMP_NO,NORMALIZATION_CHANGED,6000,335000,1.791045,명세와 확정 규칙에 따른 표기 정규화 후보
+kream_inspection_300000.csv,INSPECTOR_EMP_NO,INVALID_FORMAT_AFTER_NORMALIZATION,1548,335000,0.46209,정규화 후 형식 불일치. 결측과 마스터 참조 문제는 별도 판단
+kream_inspection_300000.csv,PARENT_CAT_ID,NORMALIZATION_CHANGED,0,335000,0.0,명세와 확정 규칙에 따른 표기 정규화 후보
+kream_inspection_300000.csv,PARENT_CAT_ID,INVALID_FORMAT_AFTER_NORMALIZATION,2000,335000,0.597015,정규화 후 형식 불일치. 결측과 마스터 참조 문제는 별도 판단
+kream_inspection_300000.csv,ITEM_NM,NOT_EXACT_STANDARD_NAME,17100,335000,5.104478,원본 상품 코드를 기준으로 공식 표준명과 정확히 일치하지 않는 행. 복구 가능 여부와 구분
+kream_inspection_300000.csv,INSP_RESULT,NONSTANDARD_RAW_RESULT,0,335000,0.0,원본 판정이 사전의 표준 코드와 정확히 일치하지 않음
+kream_inspection_300000.csv,INSPECTOR_EMP_NO,NO_VALID_SILVER_MASTER,5942,335000,1.773731,정규화 후보가 최종 정상 마스터에 없는 행. 결측·유령·격리 마스터 참조를 포함하며 복구 전 진단
+kream_inspection_300000.csv,PARENT_CAT_ID,NO_VALID_SILVER_MASTER,12950,335000,3.865672,정규화 후보가 최종 정상 마스터에 없는 행. 결측·유령·격리 마스터 참조를 포함하며 복구 전 진단
+kream_inspector_master.csv,kream_inspector_master.csv,NONSTANDARD_ACTIVE_CODE,320,3150,10.15873,원본이 정확히 Y 또는 N이 아닌 행. 확정 정책으로 N 처리
